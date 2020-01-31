@@ -11,8 +11,7 @@ handleClick(buttonText){
     if(buttonText===this.props.quiz_question.answer){
         this.setState({incorrectAnswer:false})
         this.props.showNextQuestionHandler()
-    }
-    else {
+    } else {
         this.setState({incorrectAnswer:true})
     }
 
@@ -39,7 +38,7 @@ handleClick(buttonText){
                 </li>
               </ul>
             </section>
-            {this.state.incorrectAnswer?<p class='error'>Sorry that's not right</p>:null}
+            {this.state.incorrectAnswer?<p className='error'>Sorry that's not right</p>:null}
           </main>        
         )
     }
