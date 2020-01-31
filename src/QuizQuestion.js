@@ -1,10 +1,12 @@
 import React, { Component } from "react"
+import QuizQuestionButton from "./QuizQuestionButton.js"
+
 
 class QuizQuestion extends Component{
     
     render ()
     {
-        return(
+        return (
         
             <main>
             <section>
@@ -13,10 +15,10 @@ class QuizQuestion extends Component{
               </p>
             </section>
             <section className="buttons">
-              <ul>
-               
+              <ul>               
                 <li>
-                    {this.props.quiz_question.answer_options[0]}
+                    <QuizQuestionButton button_text ={this.props.quiz_question.answer_options[0]}/>
+                    
                 </li>
               </ul>
             </section>
